@@ -183,7 +183,7 @@ projMat = 'None';
 %     nCh = nCh_B;
 %     projMat = 'B';  
 
-save('data/structs_kms_' + projMat,'km1','km2','km3','km4','nCh','cat','projMat');
+save(['data/structs_kms_' projMat],'km1','km2','km3','km4','nCh','cat','projMat');
 
 close all;
 

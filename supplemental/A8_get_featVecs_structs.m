@@ -9,7 +9,7 @@ projMat
 
 load('data/seqs','ids');
 load('data/structs', 'structs');
-load('data/structs_kms_' + projMat,'km1','km2','km3','km4','nCh','cat');
+load(['data/structs_kms_' projMat],'km1','km2','km3','km4','nCh','cat');
 
 tb = readtable('billboard-2.0-index.csv');
 dt = table2cell(tb(:,2));
@@ -181,4 +181,4 @@ display('4-km');
     end
 
 
-save('data/structs_dataset_' + projMat,'X_struct','feat_key_struct','dates','ids');
+save(['data/structs_dataset_' projMat],'X_struct','feat_key_struct','dates','ids');
